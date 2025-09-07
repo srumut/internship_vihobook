@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+:root {
+  --color-prussianblue: #023047;
+  --color-jade: #26A96C;
+  --color-bluegreen: #219EBC;
+  --color-cerise: #EC4067;
+  --color-utorange: #FB8500;
+}
+
+@layer components {
+    .btn-pb-a,
+    .btn-pb-b,
+    .btn-j-a,
+    .btn-j-b,
+    .btn-bg-a,
+    .btn-bg-b,
+    .btn-c-a,
+    .btn-c-b,
+    .btn-uto-a,
+    .btn-uto-b {
+        @apply 
+            border 
+            rounded-md 
+            hover:cursor-pointer
+            py-2 px-3;
+    }
+
+    .btn-pb-a {
+        @apply 
+            text-[var(--color-prussianblue)] 
+            bg-transparent 
+            border-[var(--color-prussianblue)] 
+            hover:text-[white] 
+            hover:bg-[var(--color-prussianblue)]
+            active:text-[white] 
+            active:bg-[var(--color-prussianblue)];
+    }
+
+    .btn-pb-b {
+        @apply 
+            text-[white] 
+            bg-[var(--color-prussianblue)] 
+            border-[var(--color-prussianblue)] 
+            hover:text-[var(--color-prussianblue)] 
+            hover:bg-transparent
+            active:text-[var(--color-prussianblue)] 
+            active:bg-transparent;
+    }
+
+    .btn-j-a {
+        @apply 
+            text-[var(--color-jade)] 
+            bg-transparent 
+            border-[var(--color-jade)] 
+            hover:text-[white] 
+            hover:bg-[var(--color-jade)]
+            active:text-[white] 
+            active:bg-[var(--color-jade)];
+    }
+
+    .btn-j-b {
+          @apply 
+            text-[white] 
+            bg-[var(--color-jade)] 
+            border-[var(--color-jade)] 
+            hover:text-[var(--color-jade)] 
+            hover:bg-transparent
+            active:text-[var(--color-jade)] 
+            active:bg-transparent;
+    }
+
+    .btn-bg-a {
+        @apply 
+            text-[var(--color-bluegreen)] 
+            bg-transparent 
+            border-[var(--color-bluegreen)] 
+            hover:text-[white] 
+            hover:bg-[var(--color-bluegreen)]
+            active:text-[white] 
+            active:bg-[var(--color-bluegreen)];
+    }
+
+    .btn-bg-b {
+          @apply 
+            text-[white] 
+            bg-[var(--color-bluegreen)] 
+            border-[var(--color-bluegreen)] 
+            hover:text-[var(--color-bluegreen)] 
+            hover:bg-transparent
+            active:text-[var(--color-bluegreen)] 
+            active:bg-transparent;
+    }
+
+    .btn-c-a {
+        @apply 
+            text-[var(--color-cerise)] 
+            bg-transparent 
+            border-[var(--color-cerise)] 
+            hover:text-[white] 
+            hover:bg-[var(--color-cerise)]
+            active:text-[white] 
+            active:bg-[var(--color-cerise)];
+    }
+
+    .btn-c-b {
+          @apply 
+            text-[white] 
+            bg-[var(--color-cerise)] 
+            border-[var(--color-cerise)] 
+            hover:text-[var(--color-cerise)] 
+            hover:bg-transparent
+            active:text-[var(--color-cerise)] 
+            active:bg-transparent;
+    }
+
+    .btn-uto-a {
+        @apply 
+            text-[var(--color-utorange)] 
+            bg-transparent 
+            border-[var(--color-utorange)] 
+            hover:text-[white] 
+            hover:bg-[var(--color-utorange)]
+            active:text-[white] 
+            active:bg-[var(--color-utorange)];
+    }
+
+    .btn-uto-b {
+          @apply 
+            text-[white] 
+            bg-[var(--color-utorange)] 
+            border-[var(--color-utorange)] 
+            hover:text-[var(--color-utorange)] 
+            hover:bg-transparent
+            active:text-[var(--color-utorange)] 
+            active:bg-transparent;
+
+    }
+
+    .input-pb {
+        @apply
+            text-[var(--color-prussianblue)] 
+            w-full
+            bg-transparent 
+            py-1.5
+            pl-1
+            pr-1
+            text-base
+            rounded-md
+            inset-ring
+            inset-ring-[var(--color-prussianblue)]
+            hover:shadow-lg
+            focus:shadow-lg
+            focus:inset-ring-2
+            focus:outline-none;
+    }
+
+    .input-j {
+        @apply 
+            text-[var(--color-jade)] 
+            w-full
+            bg-transparent 
+            py-1.5
+            pl-1
+            pr-1
+            text-base
+            inset-ring
+            inset-ring-[var(--color-jade)]
+            rounded-md
+            hover:shadow-lg
+            focus:shadow-lg
+            focus:border-2
+            focus:outline-none;
+    }
+
+    .input-c {
+        @apply 
+            text-[var(--color-cerise)] 
+            w-full
+            bg-transparent 
+            py-1.5
+            pl-1
+            pr-1
+            text-base
+            inset-ring
+            inset-ring-[var(--color-cerise)]
+            rounded-md
+            hover:shadow-lg
+            focus:shadow-lg
+            focus:border-2
+            focus:outline-none;
+    }
+}
