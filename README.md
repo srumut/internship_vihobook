@@ -22,13 +22,13 @@ npm run start
 
 Note: the command `npx prisma migrate reset` will want you to confirm the operation, simply press **Y** key
 
-Then we need to setup this project
+Then we need to setup this project on another shell instance while backend is running
 
 ```bash
 git clone git@github.com:srumut/internship_vihobook.git
 cd internship_vihobook
 npm i
-npm run start
+npm run dev
 ```
 
 After that frontend must be available on [localhost:3000](localhost:3000).
